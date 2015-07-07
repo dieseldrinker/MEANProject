@@ -1,0 +1,13 @@
+Feature Design:
+
+-Login with google oauth/facebook/twitter (to be added last);
+
+- use twitter bootstrap dashboard as a basis for main display
+- have a range slider for the total number of portions created by the recipe
+- have an export to save the list as a shopping list for evernote, rtm, google keep?
+- filter displayed recipes based on filter text (include filter of tags that aren't displayed!)
+- sort recipes based on column clicked
+- clicking on a recipe goes to the recipe display.
+
+
+

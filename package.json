@@ -1,0 +1,8 @@
+{
+  "name": "ProjectX",
+  "dependencies": {
+    "express": "latest",
+    "body-parser": "latest",
+    "mongoose": "latest"
+  }
+}
