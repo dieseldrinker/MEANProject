@@ -9,6 +9,11 @@
 		<label>Qty:<input type="number" ng-model="ingredient.quantity" >	</label>
 		<!-- measurement should become select in the future -->
 		<label>Measure: <input type="text" ng-model="ingredient.measurement">	 </label>
+		<br>
 		<button ng-show="$last" ng-click="rb.addIngredient()">Add ingredient</button>
 	</div>
+	<div class="directions">
+		<textarea ui-tinymce ng-model="recipe.directions" placeholder="Write directions here...."></textarea>
+	</div>
+	<button ng-click="rb.createRecipe(recipe)">Save Recipe</button>
 </div>

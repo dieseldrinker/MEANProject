@@ -16,11 +16,13 @@ app.controller('RecipesBuilder', function(RecipeFactory) {
 
 
 	// CREATE
-	var createRecipe = function(recipe) {
-		console.log('sending recipe to factory')
-		RecipeFactory.createRecipe(recipe, function() {
+	this.createRecipe = function(recipe) {
+		recipe.ingredients = that.ingredients;
+		console.log('sending recipe to factory', recipe);
 
-		})
+		// RecipeFactory.createRecipe(recipe, function() {
+
+		// })
 	}
 })
 
