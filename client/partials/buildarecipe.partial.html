@@ -1,0 +1,14 @@
+<!-- RecipeBuilder controller loaded via modules.js as "rb" -->
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+
+	<h1 class="page-header">Build a Recipe</h1>
+
+	<h2 class="sub-header">- Ingredients</h2>
+	<div class='ingredients' ng-repeat="ingredient in rb.ingredients">
+		<input type="text" ng-model="ingredient.ingredient" placeholder="Add Ingredient">
+		<label>Qty:<input type="number" ng-model="ingredient.quantity" >	</label>
+		<!-- measurement should become select in the future -->
+		<label>Measure: <input type="text" ng-model="ingredient.measurement">	 </label>
+		<button ng-show="$last" ng-click="rb.addIngredient()">Add ingredient</button>
+	</div>
+</div>

@@ -1,3 +1,27 @@
+app.factory('RecipeFactory', function($http, $location){
+	return {
+		getRecipes: function(callback) {
+			console.log('Getting recipes from server');
+			$http.get('/recipes').success(function(response) {
+				callback(response);
+			})
+		}
+	}
+})
+
+app.factory('RecipeBuilder', function() {
+	return {
+		createRecipe: function(recipe, callback) {
+			console.log('sending new recipe to server');
+			$http.post('/recipes', recipe).success(function(response) {
+				callback(response);
+			})
+		}
+	}
+})
+
+
+// demo stuff down here:
 app.factory('UserFactory', function($http, $location){
 	return {
 		getUsers: function(callback){
